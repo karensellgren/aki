@@ -1,0 +1,309 @@
+/* Reset and Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #f0f0f5;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Header */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background: #522081;
+    /* Darker Purple */
+    color: #fff;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+header h1 img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+nav {
+    clear: both;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #6A389A;
+    /* Lighter Purple on hover */
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.banner {
+    position: relative;
+    width: 100%;
+    background: #e6e6f0;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #522081;
+    /* Darker Purple */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+
+.btn:hover {
+    background: #6A389A;
+    /* Lighter Purple on hover */
+}
+
+.banner .text-overlay {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 90%;
+    color: white;
+}
+
+.text-overlay {
+    position: absolute;
+    /* Overlay the image */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust for element's own size */
+    color: white;
+    /* Text color */
+    text-align: center;
+    /* Center text */
+    width: 80%;
+    /* Adjust width as needed */
+    padding: 20px;
+
+    border-radius: 10px;
+    /* Optional: Rounded corners */
+}
+
+.banner .text-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.banner .text-overlay p {
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+/* Sections */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.services-grid div {
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.services,
+.about,
+.contact {
+    padding: 40px 20px;
+    background: #ffffff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.services h2,
+.about h2,
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #522081;
+    /* Darker Purple */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #6A389A;
+    /* Lighter Purple on hover */
+}
+
+/* Footer */
+footer {
+    background: #522081;
+    /* Darker Purple */
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .banner .text-overlay h2 {
+        font-size: 20px;
+    }
+
+    .banner .text-overlay p {
+        font-size: 14px;
+    }
+
+    .banner .btn {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        z-index: 11;
+        position: relative;
+    }
+
+    .nav-links a {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #522081;
+        /* Darker Purple */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aki Translations</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <h1><img src="assets/icon.png" alt="Aki Translations Icon"> Aki Translations</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="mailto:contact@akitranslations.com">contact@akitranslations.com</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <section class="banner" id="home">
+        <img src="assets/banner.gif" alt="Home GIF">
+        <div class="text-overlay">
+            <h2>Professional Translation Services</h2>
+            <p>Accurate and reliable translations to connect you globally.</p>
+            <a href="#contact" class="btn">Get a Quote</a>
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div>
+                <h3>Document Translation</h3>
+                <p>Accurate translation of all types of documents.</p>
+            </div>
+            <div>
+                <h3>Website Localization</h3>
+                <p>Adapting your website for global audiences.</p>
+            </div>
+            <div>
+                <h3>Certified Translations</h3>
+                <p>Official translations for legal and official purposes.</p>
+            </div>
+            <div>
+                <h3>Interpretation Services</h3>
+                <p>Professional interpretation for meetings and events.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            Aki Translations is a family-owned translation agency based in Sweden. We specialize in professional and
+            certified translation services to help individuals and businesses communicate effectively across languages.
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aki Translations. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
