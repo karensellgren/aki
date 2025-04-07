@@ -1,6 +1,14 @@
 /* Reset and Base Styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+
+:root {
+    --primary-color: #101e5a;
+    --secondary-color: #d8bfd8;
+    --background-color: #101e5a;
+    --text-color: #333;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +18,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: #f0f0f5;
+    background: #f7f8f9;
     color: #333;
 }
 
@@ -29,8 +37,8 @@ body {
 }
 
 header {
-    background: #522081;
-    /* Darker Purple */
+    background: var(--background-color);
+    /* Darker Blue */
     color: #fff;
     padding: 10px 0;
     z-index: 10;
@@ -83,7 +91,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #6A389A;
+    background: var(--background-color);
     /* Lighter Purple on hover */
     border-radius: 5px;
 }
@@ -120,8 +128,8 @@ nav ul li a:hover {
 
 .btn {
     display: inline-block;
-    background: #522081;
-    /* Darker Purple */
+    background: var(--background-color);
+    /* Darker Blue */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -131,8 +139,8 @@ nav ul li a:hover {
 
 
 .btn:hover {
-    background: #6A389A;
-    /* Lighter Purple on hover */
+    background: var(--background-color);
+    /* Lighter Blue on hover */
 }
 
 .banner .text-overlay {
@@ -228,7 +236,7 @@ nav ul li a:hover {
 }
 
 .contact button {
-    background: #522081;
+    background: var(--background-color);
     /* Darker Purple */
     color: #fff;
     padding: 10px;
@@ -238,13 +246,13 @@ nav ul li a:hover {
 }
 
 .contact button:hover {
-    background: #6A389A;
+    background: var(--background-color);
     /* Lighter Purple on hover */
 }
 
 /* Footer */
 footer {
-    background: #522081;
+    background: var(--background-color);
     /* Darker Purple */
     color: #fff;
     text-align: center;
@@ -285,13 +293,14 @@ footer {
     .nav-links {
         display: none;
         flex-direction: column;
-        background: #522081;
+        background: var(--background-color);
         /* Darker Purple */
         position: absolute;
         top: 60px;
         right: 0;
         width: 100%;
         z-index: 999;
+        overflow: hidden;
     }
 
     .nav-links.active {
