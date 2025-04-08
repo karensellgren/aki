@@ -1,12 +1,13 @@
 /* Reset and Base Styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-
 :root {
     --primary-color: #101e5a;
-    --secondary-color: #d8bfd8;
+    --secondary-color: #615C62;
     --background-color: #101e5a;
+    --background: #f7f8f9;
     --text-color: #333;
+    --color: #fff;
 }
 
 * {
@@ -18,30 +19,25 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: #f7f8f9;
-    color: #333;
-}
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px 0;
-}
-
-/* Header */
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: var(--background);
+    color: var(--text-color);
 }
 
 header {
     background: var(--background-color);
-    /* Darker Blue */
-    color: #fff;
+    color: var(--color);
     padding: 10px 0;
-    z-index: 10;
+
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
@@ -61,7 +57,7 @@ header h1 img {
     display: none;
     background: none;
     border: none;
-    color: #fff;
+    color: var(--color);
     font-size: 28px;
     cursor: pointer;
     float: right;
@@ -84,19 +80,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--color);
     text-decoration: none;
     padding: 5px 10px;
-    transition: background 0.3s;
 }
 
 nav ul li a:hover {
-    background: var(--background-color);
-    /* Lighter Purple on hover */
+    background: var(--secondary-color);
     border-radius: 5px;
 }
 
-/* Hero Section */
 .banner {
     position: relative;
     width: 100%;
@@ -131,47 +124,27 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     background: var(--background-color);
-    /* Darker Blue */
-    color: #fff;
+    color: var(--color);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s;
 }
 
-
 .btn:hover {
-    background: var(--background-color);
-    /* Lighter Blue on hover */
-}
-
-.banner .text-overlay {
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    width: 90%;
-    color: white;
+    background: var(--secondary-color);
 }
 
 .text-overlay {
     position: absolute;
-    /* Overlay the image */
     top: 50%;
-    /* Center vertically */
     left: 50%;
-    /* Center horizontally */
     transform: translate(-50%, -50%);
-    /* Adjust for element's own size */
     color: white;
-    /* Text color */
     text-align: center;
-    /* Center text */
     width: 80%;
-    /* Adjust width as needed */
     padding: 20px;
-
     border-radius: 10px;
-    /* Optional: Rounded corners */
 }
 
 .banner .text-overlay h2 {
@@ -217,7 +190,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.services ul {
+.service ul {
     list-style: disc;
     padding-left: 20px;
 }
@@ -233,67 +206,39 @@ nav ul li a:hover {
 .contact textarea {
     padding: 10px;
     margin: 10px 0;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact button {
     background: var(--background-color);
-    /* Darker Purple */
     color: #fff;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact button:hover {
-    background: var(--background-color);
-    /* Lighter Purple on hover */
+    background: var(--secondary-color)
 }
 
 /* Footer */
 footer {
     background: var(--background-color);
-    /* Darker Purple */
     color: #fff;
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px 10px
 }
 
-/* Responsive Styles */
-@media (max-width: 600px) {
-
-    .banner .text-overlay h2 {
-        font-size: 20px;
-    }
-
-    .banner .text-overlay p {
-        font-size: 14px;
-    }
-
-    .banner .btn {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        transform: none;
-        margin-top: 20px;
-    }
-}
+/* Responsive Sytles */
 
 @media (max-width: 768px) {
 
     .menu-toggle {
-        display: block;
-        z-index: 11;
-        position: relative;
-    }
-
-    .nav {
-        position: relative;
-    }
-
-    .nav-links a {
         display: block;
     }
 
@@ -302,18 +247,11 @@ footer {
         flex-direction: column;
         background: var(--background-color);
         width: 100%;
-        z-index: 1;
         padding: 10px 0;
     }
 
     .nav-links.active {
         display: flex;
-    }
-
-    .nav-links.active .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
     }
 
     nav ul {
@@ -331,4 +269,45 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .banner {
+        position: relative;
+        width: 100%
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .banner .text-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .banner .text-overlay h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .banner .text-overlay p {
+        font-size: 14px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .banner .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin-top: 10px;
+        position: relative;
+    }
 }
