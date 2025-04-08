@@ -119,11 +119,13 @@ nav ul li a:hover {
 .banner h2 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: var(--text-color)
 }
 
 .banner p {
     font-size: 18px;
     margin-bottom: 20px;
+    color: var(--text-color)
 }
 
 .btn {
@@ -261,6 +263,7 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 600px) {
+
     .banner .text-overlay h2 {
         font-size: 20px;
     }
@@ -286,6 +289,10 @@ footer {
         position: relative;
     }
 
+    .nav {
+        position: relative;
+    }
+
     .nav-links a {
         display: block;
     }
@@ -294,17 +301,25 @@ footer {
         display: none;
         flex-direction: column;
         background: var(--background-color);
-        /* Darker Purple */
-        position: absolute;
-        top: 60px;
-        right: 0;
         width: 100%;
-        z-index: 999;
-        overflow: hidden;
+        z-index: 1;
+        padding: 10px 0;
     }
 
     .nav-links.active {
         display: flex;
+    }
+
+    .nav-links.active .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     nav ul li {
@@ -315,4 +330,5 @@ footer {
     .services-grid {
         grid-template-columns: 1fr;
     }
+
 }
