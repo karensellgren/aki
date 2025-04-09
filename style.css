@@ -30,11 +30,16 @@ header {
 
 }
 
+.menu-toggle {
+    display: none;
+}
+
 .header-content {
     width: 90%;
     max-width: 1100px;
-    margin: auto;
     padding: 20px 0px;
+
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,18 +55,6 @@ header h1 {
 header h1 img {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: var(--color);
-    font-size: 28px;
-    cursor: pointer;
-    float: right;
-    margin-top: 10px;
     margin-right: 10px;
 }
 
@@ -143,10 +136,10 @@ nav ul li a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 80%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    width: 80%;
     padding: 20px;
     border-radius: 10px;
 }
@@ -240,31 +233,37 @@ footer {
 
 /* Responsive Sytles */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .menu-toggle {
         display: block;
         background: none;
         border: none;
-        font-size: 28px;
         cursor: pointer;
         position: absolute;
+        float: right;
+
+        color: var(--color);
+
+        font-size: 28px;
         top: -5px;
         right: 20px;
-        z-index: 1002;
+        margin-top: 10px;
+        margin-right: 10px;
         padding: 8px;
-        line-height: 1;
 
+        z-index: 1002;
+        line-height: 1;
     }
 
     .header-content {
-        position: relative;
-        padding: 10px 20px;
         width: 100%;
+
+        padding: 10px 20px;
+
+        position: relative;
         box-sizing: border-box;
-        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .nav-links {
@@ -292,6 +291,35 @@ footer {
         margin: 10px 0;
     }
 
+    .banner .text-overlay {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner .text-overlay h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .banner .text-overlay p {
+        font-size: 14px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .banner .btn {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
     .services-grid {
         grid-template-columns: 1fr;
     }
@@ -313,136 +341,6 @@ footer {
         height: auto;
         display: block;
     }
-
-    .banner .text-overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-    }
-
-    .banner .text-overlay h2 {
-        font-size: 18px;
-        margin-bottom: 5px;
-        text-align: center;
-    }
-
-    .banner .text-overlay p {
-        font-size: 14px;
-        margin-bottom: 5px;
-        text-align: center;
-    }
-
-    .banner .btn {
-        font-size: 14px;
-        padding: 10px 20px;
-        margin-top: 10px;
-        display: inline-block;
-    }
 }
 
-@media (max-width: 1024px) {
-
-    .menu-toggle {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 28px;
-        cursor: pointer;
-        position: absolute;
-        top: -5px;
-        right: 20px;
-        z-index: 1002;
-        padding: 8px;
-        line-height: 1;
-
-    }
-
-    .header-content {
-        position: relative;
-        padding: 10px 20px;
-        width: 100%;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: var(--background-color);
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    nav ul li {
-        text-align: center;
-        margin: 10px 0;
-    }
-
-
-    .banner {
-        position: relative;
-    }
-
-    .banner img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .banner .text-overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-    }
-
-    .banner .text-overlay h2 {
-        font-size: 18px;
-        margin-bottom: 5px;
-        text-align: center;
-    }
-
-    .banner .text-overlay p {
-        font-size: 14px;
-        margin-bottom: 5px;
-        text-align: center;
-    }
-
-    .banner .btn {
-        font-size: 14px;
-        padding: 10px 20px;
-        margin-top: 10px;
-        display: inline-block;
-    }
-}
+@media (max-width: 480px) {}
