@@ -121,6 +121,10 @@ nav ul li a:hover {
     color: var(--text-color)
 }
 
+.mobile-banner {
+    display: none;
+}
+
 .btn {
     display: inline-block;
     background: var(--background-color);
@@ -292,9 +296,16 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .desktop-banner {
+        display: none;
+    }
+
+    .mobile-banner {
+        display: block;
+    }
+
     .banner {
         position: relative;
-        width: 100%
     }
 
     .banner img {
@@ -305,6 +316,8 @@ footer {
 
     .banner .text-overlay {
         position: absolute;
+        top: 50%;
+        left: 50%;
         width: 100%;
         height: 100%;
         padding: 10px;
@@ -331,6 +344,6 @@ footer {
         font-size: 14px;
         padding: 10px 20px;
         margin-top: 10px;
-        position: relative;
+        display: inline-block;
     }
 }
