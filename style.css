@@ -27,7 +27,6 @@ header {
     background: var(--background-color);
     color: var(--color);
     padding: 10px 0;
-
 }
 
 .menu-toggle {
@@ -65,7 +64,8 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul li {
@@ -75,7 +75,7 @@ nav ul li {
 nav ul li a {
     color: var(--color);
     text-decoration: none;
-    padding: 5px 10px;
+    align-items: center;
 }
 
 nav ul li a:hover {
@@ -230,6 +230,59 @@ footer {
     text-align: center;
     padding: 20px 10px
 }
+
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.language-toggle {
+    background: none;
+    border: none;
+    color: var(--color);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 20px 0px;
+    margin-left: 10px;
+}
+
+.language-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.language-menu li {
+    padding: 8px 12px;
+}
+
+.language-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--color);
+}
+
+.language-menu li a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Show dropdown on hover (desktop) */
+.language-dropdown:hover .language-menu {
+    display: block;
+}
+
+/* Make sure it works well inside nav */
+.nav-links .language-dropdown {
+    text-align: left;
+}
+
+
 
 /* Responsive Sytles */
 

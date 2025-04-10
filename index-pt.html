@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aki Translations</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1><img src="assets/icon.png" alt="Ícone Aki Traduções"> Aki Translations</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="mailto:contato@akitranslations.com">contato@akitranslations.com</a></li>
+                    <li class="language-dropdown">
+                        <button class="language-toggle">🌐 Língua ▾</button>
+                        <ul class="language-menu">
+                            <li><a href="index.html"><img src="assets/flag-en.png" alt="English" width="20"> English</a>
+                            </li>
+                            <li><a href="index-pt.html"><img src="assets/flag-pt.png" alt="Português" width="20">
+                                    Português</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <section class="banner desktop-banner" id="home">
+        <img src="assets/banner.gif" alt="Home GIF">
+        <div class="text-overlay">
+            <h2>Serviços de Tradução Profissional</h2>
+            <p>Traduções precisas e confiáveis para conectar você globalmente.</p>
+            <a href="#contact" class="btn">Cotação</a>
+        </div>
+
+    </section>
+
+    <!-- Mobile Banner -->
+    <section class="banner mobile-banner" id="home">
+        <img src="assets/banner-mobile.gif" alt="Mobile Banner">
+        <div class="text-overlay">
+            <h2>Serviços de Tradução Profissional</h2>
+            <p>ATraduções precisas e confiáveis para conectar você globalmente.</p>
+            <a href="#contact" class="btn">Cotação</a>
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+        <h2>Nossos Serviços</h2>
+        <div class="services-grid">
+            <div>
+                <h3>Tradução de Documentos</h3>
+                <p>Tradução precisa de todos os tipos de documentos.</p>
+            </div>
+            <div>
+                <h3>Localização de Websites</h3>
+                <p>Adaptação do seu website para públicos globais.</p>
+            </div>
+            <div>
+                <h3>Traduções Certificadas</h3>
+                <p>Traduções oficiais para fins legais e oficiais.</p>
+            </div>
+            <div>
+                <h3>Serviços de Interpretação</h3>
+                <p>Interpretação profissional para reuniões e eventos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contate-Nos</h2>
+        <form>
+            <input type="text" placeholder="Seu Nome" required />
+            <input type="email" placeholder="Seu Email" required />
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Sobre Nós</h2>
+        <p>
+            A Aki Translations é uma agência de tradução familiar com sede na Suécia. Somos especializados em serviços
+            de tradução profissional e certificada para ajudar indivíduos e empresas a se comunicarem efetivamente entre
+            idiomas.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aki Translations. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
