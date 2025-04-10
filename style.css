@@ -242,22 +242,23 @@ footer {
     color: var(--color);
     cursor: pointer;
     font-size: 16px;
-    padding: 10px 0px;
-    margin-left: 10px;
+    padding: 0px 0px;
+    margin-left: 0px;
 }
 
 .language-menu {
     display: none;
     position: absolute;
     background-color: var(--background-color);
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 120px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
     z-index: 1;
-    right: 0;
+    right: 0px;
 }
 
 .language-menu li {
-    padding: 8px 12px;
+    padding: 12px 12px;
 }
 
 .language-menu li a {
@@ -405,5 +406,9 @@ footer {
 
     nav ul {
         margin: 20px;
+    }
+
+    .language-menu {
+        right: -100px;
     }
 }
