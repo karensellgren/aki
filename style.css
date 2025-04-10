@@ -232,11 +232,13 @@ footer {
 }
 
 .language-dropdown {
+    font-family: 'Poppins', sans-serif;
     position: relative;
     display: inline-block;
 }
 
 .language-toggle {
+    font-family: 'Poppins', sans-serif;
     background: none;
     border: none;
     color: var(--color);
