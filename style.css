@@ -265,6 +265,17 @@ footer {
     right: 0px;
 }
 
+.language-menu img {
+    width: 20px;
+    /* Adjust width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Add spacing between flag and text */
+    vertical-align: middle;
+    /* Align the image with the text */
+}
+
 .language-menu li {
     padding: 12px 12px;
 }
