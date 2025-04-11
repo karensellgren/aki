@@ -248,6 +248,12 @@ footer {
     margin-left: 0px;
 }
 
+.language-toggle .lang-icon {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}
+
 .language-menu {
     display: none;
     position: absolute;

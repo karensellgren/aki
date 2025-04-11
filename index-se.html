@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8" />
@@ -15,17 +15,21 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Service</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Tjänster</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#about">Om Oss</a></li>
                     <li><a href="mailto:contact@akitranslations.com">contact@akitranslations.com</a></li>
                     <li class="language-dropdown">
-                        <button class="language-toggle">Language ▾</button>
+                        <button class="language-toggle">
+                            <img src="assets/white-globe.png" alt="Language Icon" class="lang-icon" />Språk
+                            ▾</button>
                         <ul class="language-menu">
                             <li><a href="index.html">English</a>
                             </li>
                             <li><a href="index-pt.html">Português</a></li>
+                            <li><a href="index-se.html">Svenska</a></li>
                         </ul>
+                </ul>
             </nav>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         </div>
@@ -34,9 +38,9 @@
     <section class="banner desktop-banner" id="home">
         <img src="assets/banner.gif" alt="Home GIF">
         <div class="text-overlay">
-            <h2>Professional Translation Services</h2>
-            <p>Accurate and reliable translations to connect you globally.</p>
-            <a href="#contact" class="btn">Get a Quote</a>
+            <h2>Professionella Översättningstjänster</h2>
+            <p>Exakta och pålitliga översättningar för att ansluta dig globalt.</p>
+            <a href="#contact" class="btn">Få en offert</a>
         </div>
 
     </section>
@@ -45,31 +49,31 @@
     <section class="banner mobile-banner" id="home">
         <img src="assets/banner-mobile.gif" alt="Mobile Banner">
         <div class="text-overlay">
-            <h2>Professional Translation Services</h2>
-            <p>Accurate and reliable translations to connect you globally.</p>
-            <a href="#contact" class="btn">Get a Quote</a>
+            <h2>Professionella Översättningstjänster</h2>
+            <p>Exakta och pålitliga översättningar för att ansluta dig globalt.</p>
+            <a href="#contact" class="btn">Få en offert</a>
         </div>
 
     </section>
 
     <section class="services" id="services">
-        <h2>Our Services</h2>
+        <h2>Våra Tjänster</h2>
         <div class="services-grid">
             <div>
-                <h3>Document Translation</h3>
-                <p>Accurate translation of all types of documents.</p>
+                <h3>Dokumentöversättning</h3>
+                <p>Exakta översättningar av alla typer av dokument.</p>
             </div>
             <div>
-                <h3>Website Localization</h3>
-                <p>Adapting your website for global audiences.</p>
+                <h3>Webbplatslokalisering</h3>
+                <p>Anpassning av din webbplats för globala målgrupper.</p>
             </div>
             <div>
-                <h3>Certified Translations</h3>
-                <p>Official translations for legal and official purposes.</p>
+                <h3>Auktoriserade Översättningar</h3>
+                <p>Officiella översättningar för juridiska och formella syften.</p>
             </div>
             <div>
-                <h3>Interpretation Services</h3>
-                <p>Professional interpretation for meetings and events.</p>
+                <h3>Tolktjänster</h3>
+                <p>Professionell tolkning för möten och evenemang.</p>
             </div>
         </div>
     </section>
@@ -77,23 +81,25 @@
     <section class="contact" id="contact">
         <h2>Contact Us</h2>
         <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" required></textarea>
+            <input type="text" placeholder="Ditt Namn" required />
+            <input type="email" placeholder="Din E-postadress"" required />
+            <textarea placeholder=" Ditt Meddelande" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
     <section class="about" id="about">
-        <h2>About Us</h2>
+        <h2>Om Oss</h2>
         <p>
-            Aki Translations is a family-owned translation agency based in Sweden. We specialize in professional and
-            certified translation services to help individuals and businesses communicate effectively across languages.
+            Aki Translations är en familjeägd översättningsbyrå baserad i Sverige. Vi specialiserar oss på
+            professionella
+            och auktoriserade översättningstjänster för att hjälpa individer och företag att kommunicera effektivt över
+            språkgränser.
         </p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Aki Translations. All rights reserved.</p>
+        <p>&copy; 2025 Aki Translations. Alla rättigheter förbehållna.</p>
     </footer>
 
     <script src="script.js"></script>
