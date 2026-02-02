@@ -23,14 +23,11 @@ body {
     color: var(--text-color);
 }
 
+/* --- HEADER & NAVIGATION --- */
 header {
     background: var(--background-color);
     color: var(--color);
     padding: 5px 0;
-}
-
-.menu-toggle {
-    display: none;
 }
 
 .header-content {
@@ -54,6 +51,10 @@ header h1 img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
+}
+
+.menu-toggle {
+    display: none;
 }
 
 nav {
@@ -82,153 +83,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-.banner {
-    position: relative;
-    width: 100%;
-    background: #e6e6f0;
-    text-align: center;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.banner img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.banner h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: var(--text-color)
-}
-
-.banner p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: var(--text-color)
-}
-
-.mobile-banner {
-    display: none;
-}
-
-.btn {
-    display: inline-block;
-    background: var(--background-color);
-    color: var(--color);
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background: var(--secondary-color);
-}
-
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.banner .text-overlay h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.banner .text-overlay p {
-    font-size: 16px;
-    padding: 0 10px;
-}
-
-/* Sections */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-.services-grid div {
-    background: #f9f9f9;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.services,
-.about,
-.contact {
-    padding: 40px 20px;
-    background: #ffffff;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-}
-
-.services h2,
-.about h2,
-.contact h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.service ul {
-    list-style: disc;
-    padding-left: 20px;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: auto;
-}
-
-.contact input,
-.contact textarea {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.contact button {
-    background: var(--background-color);
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-}
-
-.contact button:hover {
-    background: var(--secondary-color)
-}
-
-/* Footer */
-footer {
-    background: var(--background-color);
-    color: #fff;
-    text-align: center;
-    padding: 20px 10px
-}
-
-/* Language Menu */
+/* --- LANGUAGE DROPDOWN --- */
 .language-dropdown {
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -294,75 +149,208 @@ footer {
     text-align: left;
 }
 
-/* ... Keep your existing CSS ... */
+/* --- BANNER SECTION --- */
+.banner {
+    position: relative;
+    width: 100%;
+    background: #e6e6f0;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* --- UPDATED CLIENT CARDS --- */
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.mobile-banner {
+    display: none;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner .text-overlay h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: white;
+    /* Ensure text is white over image */
+}
+
+.banner .text-overlay p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--background-color);
+    color: var(--color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+}
+
+/* --- GENERAL SECTIONS (Services, About, Contact) --- */
+.services,
+.about,
+.contact {
+    padding: 40px 20px;
+    background: #ffffff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.services h2,
+.about h2,
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.services-grid div {
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* --- CLIENT CARDS (About Us) - FIXED SIZING --- */
 .client-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* 4 columns for logos */
-    gap: 20px;
+    gap: 30px;
+    /* Space between cards */
     margin-top: 40px;
-    align-items: start;
+    align-items: stretch;
+    /* Cards stretch to same height */
 }
 
 .client-card {
     background: #ffffff;
-    /* White background for logos */
-    padding: 20px;
+    padding: 30px 20px;
     border-radius: 12px;
     border: 1px solid #eee;
     text-align: center;
-    /* Center align everything */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s;
-    height: 100%;
+
+    /* Center content vertically */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 180px;
+    /* Minimum height for consistency */
 }
 
 .client-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .client-logo {
-    max-width: 120px;
-    /* Limit logo width */
-    height: 50px;
-    /* Fixed height for consistency */
+    width: auto;
+    height: auto;
+    max-width: 160px;
+    /* Prevent logos from getting too huge */
+    max-height: 80px;
+    /* Prevent tall logos from breaking layout */
     object-fit: contain;
-    margin-bottom: 15px;
-    filter: grayscale(100%);
-    /* Optional: makes logos gray until hover */
-    opacity: 0.8;
-    transition: 0.3s;
+    margin-bottom: 20px;
+
+    /* Optional: Grayscale until hover */
+    filter: grayscale(100%) opacity(0.8);
+    transition: all 0.3s ease;
 }
 
 .client-card:hover .client-logo {
-    filter: grayscale(0%);
-    /* Color on hover */
-    opacity: 1;
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.05);
 }
 
 .client-card p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
-    /* Make the text bold */
     color: var(--primary-color);
     line-height: 1.3;
     margin: 0;
 }
 
-/* Mobile: 2 columns */
-@media (max-width: 768px) {
-    .client-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* --- CONTACT FORM --- */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
 }
 
-/* Responsive Styles */
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact button {
+    background: var(--background-color);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.contact button:hover {
+    background: var(--secondary-color)
+}
+
+/* --- FOOTER --- */
+footer {
+    background: var(--background-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px
+}
+
+/* --- RESPONSIVE / MEDIA QUERIES --- */
+
+/* Tablet & Smaller Laptops */
 @media (max-width: 1024px) {
     .menu-toggle {
         display: block;
@@ -414,25 +402,28 @@ footer {
         margin: 10px 0;
     }
 
-    .banner .text-overlay {
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .language-menu {
+        width: 150px;
     }
 }
 
+/* Tablets (Portrait) */
 @media (max-width: 768px) {
     .services-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 cols for services */
     }
 
     .client-grid {
-        grid-template-columns: 1fr;
-        /* Stack cards on mobile */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 cols for clients */
+        gap: 15px;
+    }
+
+    .client-logo {
+        max-width: 120px;
+        /* Slightly smaller logos */
+        max-height: 60px;
     }
 
     .desktop-banner {
@@ -443,17 +434,21 @@ footer {
         display: block;
     }
 
-    .banner {
-        position: relative;
-    }
-
     .banner img {
         width: 100%;
         height: auto;
-        display: block;
+    }
+
+    .banner .text-overlay h2 {
+        font-size: 20px;
+    }
+
+    .banner .text-overlay p {
+        font-size: 14px;
     }
 }
 
+/* Mobile Phones */
 @media (max-width: 480px) {
 
     .header-content,
@@ -467,5 +462,15 @@ footer {
 
     .language-menu {
         right: -100px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        /* 1 col for services */
+    }
+
+    .client-grid {
+        grid-template-columns: 1fr;
+        /* 1 col for clients */
     }
 }
