@@ -294,42 +294,72 @@ footer {
     text-align: left;
 }
 
-/* --- CLIENT CARDS (About Us) --- */
-/* This is the part that fixes the formatting */
+/* ... Keep your existing CSS ... */
+
+/* --- UPDATED CLIENT CARDS --- */
 .client-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 columns side-by-side */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns for logos */
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 40px;
+    align-items: start;
 }
 
 .client-card {
-    background: #f4f6f8;
-    padding: 25px;
-    border-radius: 8px;
-    border-left: 5px solid var(--primary-color);
-    text-align: left;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+    /* White background for logos */
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    text-align: center;
+    /* Center align everything */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .client-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
-.client-card h3 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
+.client-logo {
+    max-width: 120px;
+    /* Limit logo width */
+    height: 50px;
+    /* Fixed height for consistency */
+    object-fit: contain;
+    margin-bottom: 15px;
+    filter: grayscale(100%);
+    /* Optional: makes logos gray until hover */
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.client-card:hover .client-logo {
+    filter: grayscale(0%);
+    /* Color on hover */
+    opacity: 1;
 }
 
 .client-card p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #444;
+    font-size: 0.9rem;
+    font-weight: 600;
+    /* Make the text bold */
+    color: var(--primary-color);
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* Mobile: 2 columns */
+@media (max-width: 768px) {
+    .client-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Responsive Styles */
