@@ -2,123 +2,124 @@
 <html lang="sv">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aki Translation & Localization</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
         <div class="header-content">
-            <h1><img src="assets/icon.png" alt="Aki Translation & Localization Icon"> Aki Translation & Localization
-            </h1>
+            <a href="index.html" class="brand">
+                <img src="assets/icon.png" alt="Aki Logo">
+                Aki Global
+            </a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
                     <li><a href="#services">Tjänster</a></li>
-                    <li><a href="#about">Om Oss</a></li>
+                    <li><a href="#about">Om oss</a></li>
                     <li><a href="#contact">Kontakt</a></li>
-                    <li class="language-dropdown">
-                        <button class="language-toggle">
-                            <img src="assets/white-globe.png" alt="Language Icon" class="lang-icon" />Språk
-                            ▾</button>
-                        <ul class="language-menu">
-                            <li><a href="index.html"><img src="assets/flag-en.png" alt="English Flag" /> English</a>
-                            </li>
-                            <li><a href="index-pt.html"><img src="assets/flag-pt.png" alt="Portuguese Flag" />
-                                    Português</a></li>
-                            <li><a href="index-se.html"><img src="assets/flag-se.png" alt="Swedish Flag" /> Svenska</a>
-                            </li>
-                        </ul>
-                    </li>
                 </ul>
             </nav>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="header-right">
+                <div class="language-dropdown">
+                    <button class="lang-btn">🇸🇪 Svenska ▾</button>
+                    <ul class="language-menu">
+                        <li><a href="index.html">🇬🇧 English</a></li>
+                        <li><a href="index-pt.html">🇧🇷 Português</a></li>
+                        <li><a href="index-se.html">🇸🇪 Svenska</a></li>
+                    </ul>
+                </div>
+                <a href="#contact" class="cta-btn-small">Begär Offert</a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         </div>
     </header>
 
-    <section class="banner desktop-banner" id="home">
-        <img src="assets/banner.gif" alt="Home GIF">
-        <div class="text-overlay">
-            <h2>Expertlokalisering för global tillväxt</h2>
-            <p>Vi kopplar samman kod, kultur och innehåll för spel, appar och varumärken.</p>
-            <a href="#contact" class="btn">Få en offert</a>
-        </div>
-    </section>
+    <div class="hero-wrapper">
+        <section class="hero-card">
+            <div class="hero-content">
+                <h1>Lokalisering anpassad för snabbväxande team</h1>
+                <p>Hantera ditt översättningsflöde mer exakt och skalbart. Minska utvecklarnas arbetsbörda samtidigt som
+                    du förbättrar översättningskvaliteten.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Boka en Demo</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/Technical_localization_scaled_1481bcfba1.webp" alt="Lokalisering Dashboard">
+            </div>
+        </section>
+    </div>
 
-    <section class="banner mobile-banner" id="home">
-        <img src="assets/banner-mobile.gif" alt="Mobile Banner">
-        <div class="text-overlay">
-            <h2>Expertlokalisering för global tillväxt</h2>
-            <p>Vi kopplar samman kod, kultur och innehåll för spel, appar och varumärken.</p>
-            <a href="#contact" class="btn">Få en offert</a>
+    <section class="trust-bar">
+        <p>Används av globala innovatörer</p>
+        <div class="logo-grid">
+            <div class="logo-item"><img src="assets/logo-tiktok.png" alt="TikTok"></div>
+            <div class="logo-item"><img src="assets/logo-bytedance.png" alt="ByteDance"></div>
+            <div class="logo-item"><img src="assets/logo-netease.png" alt="NetEase"></div>
+            <div class="logo-item"><img src="assets/logo-resso.png" alt="Resso"></div>
         </div>
     </section>
 
     <section class="services" id="services">
-        <h2>Våra Tjänster</h2>
+        <h2 class="section-title">Allt du behöver för att nå världen</h2>
         <div class="services-grid">
-            <div>
+            <div class="service-card">
                 <h3>Språktjänster</h3>
                 <p>Översättning, transcreation och redigering för korrekt och engagerande innehåll.</p>
             </div>
-            <div>
+            <div class="service-card">
                 <h3>Teknisk Lokalisering</h3>
                 <p>Internationalisering (i18n), LQA-testning och App Store-optimering (ASO).</p>
             </div>
-            <div>
+            <div class="service-card">
                 <h3>Multimedia & Ljud</h3>
                 <p>Undertextning, dubbning och manusbearbetning för video och spel.</p>
             </div>
-            <div>
-                <h3>Kulturell & Strategisk Rådgivning</h3>
+            <div class="service-card">
+                <h3>Kulturell Rådgivning</h3>
                 <p>Kulturell granskning, regelefterlevnad och marknadsstrategi.</p>
             </div>
         </div>
     </section>
 
     <section class="about" id="about">
-        <h2>Om Oss</h2>
-        <p>
-            Aki Translation & Localization är en Sverige-baserad byrå som specialiserar sig på strategisk lokalisering.
-            Vi kombinerar språklig expertis med teknisk precision för att hjälpa företag globalt.
-        </p>
+        <div class="about-container">
+            <h2>Byggt för Skalbarhet</h2>
+            <p>Aki Translation & Localization är inte bara en byrå; vi är din strategiska partner. Baserade i Sverige
+                kombinerar vi skandinavisk effektivitet med global räckvidd för att hjälpa varumärken som TikTok och
+                NetEase.</p>
 
-        <p style="margin-top: 30px; font-weight: 600; color: var(--primary-color);">
-            Vi är stolta över att driva globala strategier för branschledare:
-        </p>
-
-        <div class="client-grid">
-            <div class="client-card">
-                <img src="assets/logo-tiktok.png" alt="TikTok Logo" class="client-logo">
-                <p>Lansering i Brasilien</p>
-            </div>
-
-            <div class="client-card">
-                <img src="assets/logo-resso.png" alt="TikTok Music Logo" class="client-logo">
-                <p>Musiklokalisering</p>
-            </div>
-
-            <div class="client-card">
-                <img src="assets/logo-bytedance.png" alt="ByteDance Logo" class="client-logo">
-                <p>AI-granskning</p>
-            </div>
-
-            <div class="client-card">
-                <img src="assets/logo-netease.png" alt="NetEase Logo" class="client-logo">
-                <p>Spellokalisering</p>
+            <div class="client-grid">
+                <div class="client-card">
+                    <img src="assets/logo-tiktok.png" alt="TikTok">
+                    <p>Lansering Brasilien</p>
+                </div>
+                <div class="client-card">
+                    <img src="assets/logo-resso.png" alt="Resso">
+                    <p>Musiklokalisering</p>
+                </div>
+                <div class="client-card">
+                    <img src="assets/logo-bytedance.png" alt="ByteDance">
+                    <p>AI-förfining</p>
+                </div>
+                <div class="client-card">
+                    <img src="assets/logo-netease.png" alt="NetEase">
+                    <p>Spellokalisering</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Ditt Namn" required />
-            <input type="email" placeholder="Din E-postadress" required />
-            <textarea placeholder=" Ditt Meddelande" required></textarea>
-            <button type="submit">Send Message</button>
+        <h2 class="section-title">Redo att expandera?</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Din E-postadress" required>
+            <textarea placeholder="Hur kan vi hjälpa dig?" rows="4" required></textarea>
+            <button type="submit">Kom Igång</button>
         </form>
     </section>
 

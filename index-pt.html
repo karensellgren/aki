@@ -2,123 +2,124 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aki Translation & Localization</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
         <div class="header-content">
-            <h1><img src="assets/icon.png" alt="Ícone Aki Translation & Localization"> Aki Translation & Localization
-            </h1>
+            <a href="index.html" class="brand">
+                <img src="assets/icon.png" alt="Aki Logo">
+                Aki Global
+            </a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
                     <li><a href="#services">Serviços</a></li>
-                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#about">Sobre</a></li>
                     <li><a href="#contact">Contato</a></li>
-                    <li class="language-dropdown">
-                        <button class="language-toggle">
-                            <img src="assets/white-globe.png" alt="Language Icon" class="lang-icon" />Língua
-                            ▾</button>
-                        <ul class="language-menu">
-                            <li><a href="index.html"><img src="assets/flag-en.png" alt="English Flag" /> English</a>
-                            </li>
-                            <li><a href="index-pt.html"><img src="assets/flag-pt.png" alt="Portuguese Flag" />
-                                    Português</a></li>
-                            <li><a href="index-se.html"><img src="assets/flag-se.png" alt="Swedish Flag" /> Svenska</a>
-                            </li>
-                        </ul>
-                    </li>
                 </ul>
             </nav>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="header-right">
+                <div class="language-dropdown">
+                    <button class="lang-btn">🇧🇷 Português ▾</button>
+                    <ul class="language-menu">
+                        <li><a href="index.html">🇬🇧 English</a></li>
+                        <li><a href="index-pt.html">🇧🇷 Português</a></li>
+                        <li><a href="index-se.html">🇸🇪 Svenska</a></li>
+                    </ul>
+                </div>
+                <a href="#contact" class="cta-btn-small">Cotação</a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         </div>
     </header>
 
-    <section class="banner desktop-banner" id="home">
-        <img src="assets/banner.gif" alt="Home GIF">
-        <div class="text-overlay">
-            <h2>Localização Especializada para Expansão Global</h2>
-            <p>Conectando código, cultura e conteúdo para jogos, apps e marcas.</p>
-            <a href="#contact" class="btn">Cotação</a>
-        </div>
-    </section>
+    <div class="hero-wrapper">
+        <section class="hero-card">
+            <div class="hero-content">
+                <h1>Software de localização feito para equipes ágeis</h1>
+                <p>Gerencie seu fluxo de tradução com mais precisão e em escala. Reduza o esforço de desenvolvimento
+                    enquanto melhora a qualidade da tradução.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Solicitar Demo</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/Technical_localization_scaled_1481bcfba1.webp" alt="Painel de Localização">
+            </div>
+        </section>
+    </div>
 
-    <section class="banner mobile-banner" id="home">
-        <img src="assets/banner-mobile.gif" alt="Mobile Banner">
-        <div class="text-overlay">
-            <h2>Localização Especializada para Expansão Global</h2>
-            <p>Conectando código, cultura e conteúdo para jogos, apps e marcas.</p>
-            <a href="#contact" class="btn">Cotação</a>
+    <section class="trust-bar">
+        <p>A escolha de inovadores globais</p>
+        <div class="logo-grid">
+            <div class="logo-item"><img src="assets/logo-tiktok.png" alt="TikTok"></div>
+            <div class="logo-item"><img src="assets/logo-bytedance.png" alt="ByteDance"></div>
+            <div class="logo-item"><img src="assets/logo-netease.png" alt="NetEase"></div>
+            <div class="logo-item"><img src="assets/logo-resso.png" alt="Resso"></div>
         </div>
     </section>
 
     <section class="services" id="services">
-        <h2>Nossos Serviços</h2>
+        <h2 class="section-title">Tudo o que você precisa para ser global</h2>
         <div class="services-grid">
-            <div>
+            <div class="service-card">
                 <h3>Serviços Linguísticos</h3>
-                <p>Tradução, transcriação e edição para conteúdo preciso e envolvente.</p>
+                <p>Tradução nativa, transcriação e edição para conteúdo preciso e envolvente.</p>
             </div>
-            <div>
+            <div class="service-card">
                 <h3>Localização Técnica</h3>
                 <p>Internacionalização (i18n), testes de LQA e Otimização de App Store (ASO).</p>
             </div>
-            <div>
+            <div class="service-card">
                 <h3>Multimídia e Áudio</h3>
                 <p>Legendagem, gestão de dublagem e adaptação de roteiros para vídeos e jogos.</p>
             </div>
-            <div>
-                <h3>Consultoria Cultural e Estratégica</h3>
+            <div class="service-card">
+                <h3>Consultoria Cultural</h3>
                 <p>Verificação de sensibilidade cultural, conformidade e estratégia de mercado.</p>
             </div>
         </div>
     </section>
 
     <section class="about" id="about">
-        <h2>Sobre Nós</h2>
-        <p>
-            A Aki Translation & Localization é uma agência sediada na Suécia especializada em localização estratégica.
-            Combinamos expertise linguística com precisão técnica para conectar marcas globais.
-        </p>
+        <div class="about-container">
+            <h2>Feito para Escalar</h2>
+            <p>Aki Translation & Localization não é apenas uma agência; somos seu parceiro estratégico. Com sede na
+                Suécia, combinamos a eficiência escandinava com alcance global para ajudar marcas como TikTok e NetEase.
+            </p>
 
-        <p style="margin-top: 30px; font-weight: 600; color: var(--primary-color);">
-            Temos orgulho de impulsionar estratégias globais para líderes da indústria:
-        </p>
-
-        <div class="client-grid">
-            <div class="client-card">
-                <img src="assets/logo-tiktok.png" alt="TikTok Logo" class="client-logo">
-                <p>Lançamento no Brasil</p>
-            </div>
-
-            <div class="client-card">
-                <img src="assets/logo-resso.png" alt="TikTok Music Logo" class="client-logo">
-                <p>Localização Musical</p>
-            </div>
-
-            <div class="client-card">
-                <img src="assets/logo-bytedance.png" alt="ByteDance Logo" class="client-logo">
-                <p>Refinamento de IA</p>
-            </div>
-
-            <div class="client-card">
-                <img src="assets/logo-netease.png" alt="NetEase Logo" class="client-logo">
-                <p>Localização de Games</p>
+            <div class="client-grid">
+                <div class="client-card">
+                    <img src="assets/logo-tiktok.png" alt="TikTok">
+                    <p>Lançamento Brasil</p>
+                </div>
+                <div class="client-card">
+                    <img src="assets/logo-resso.png" alt="Resso">
+                    <p>Loc Musical</p>
+                </div>
+                <div class="client-card">
+                    <img src="assets/logo-bytedance.png" alt="ByteDance">
+                    <p>Refino de IA</p>
+                </div>
+                <div class="client-card">
+                    <img src="assets/logo-netease.png" alt="NetEase">
+                    <p>Loc de Games</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="contact" id="contact">
-        <h2>Contate-Nos</h2>
-        <form>
-            <input type="text" placeholder="Seu Nome" required />
-            <input type="email" placeholder="Seu Email" required />
-            <textarea placeholder="Sua Mensagem" required></textarea>
-            <button type="submit">Enviar Mensagem</button>
+        <h2 class="section-title">Pronto para expandir?</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Email Corporativo" required>
+            <textarea placeholder="Como podemos ajudar?" rows="4" required></textarea>
+            <button type="submit">Começar Agora</button>
         </form>
     </section>
 
