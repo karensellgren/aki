@@ -320,7 +320,7 @@ nav ul li a:hover {
     font-size: 1.2rem;
 }
 
-/* --- 5. ABOUT SECTION (Restored) --- */
+/* --- 5. ABOUT SECTION --- */
 .about {
     padding: 80px 4%;
     background: #f4f6f8;
@@ -359,6 +359,11 @@ nav ul li a:hover {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s;
+    /* Center logos vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
 }
 
 .client-card:hover {
@@ -367,16 +372,9 @@ nav ul li a:hover {
 
 .client-card img {
     max-width: 80px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    /* Removed margin since text is gone */
 }
-
-.client-card p {
-    font-weight: 600;
-    color: var(--aki-dark-blue);
-    font-size: 0.9rem;
-    margin: 0;
-}
-
 
 /* --- 6. CONTACT --- */
 .contact {
@@ -438,15 +436,39 @@ footer {
         display: none;
     }
 
-    nav {
-        display: none;
-    }
-
-    /* Use JS for mobile toggle */
+    /* MOBILE MENU STYLES */
     .menu-toggle {
         display: block;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         cursor: pointer;
+        color: var(--aki-dark-blue);
+    }
+
+    nav {
+        display: none;
+        /* Hidden by default */
+        position: absolute;
+        top: 80px;
+        /* Puts it directly below the header */
+        left: 0;
+        width: 100%;
+        background-color: var(--aki-bg-white);
+        padding: 20px 0;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid #eee;
+        z-index: 999;
+    }
+
+    /* THE FIX: When JS adds 'active', show the menu */
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        /* Stack links vertically */
+        align-items: center;
+        gap: 20px;
     }
 
     .services-grid,
@@ -465,6 +487,4 @@ footer {
     .header-right {
         display: none;
     }
-
-    /* Simplify header on mobile */
 }
